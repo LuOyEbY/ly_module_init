@@ -1,0 +1,10 @@
+emotibot-adapter:
+  container_name: emotibot_adapter
+  image:
+  ports:
+      - "9066:9066"
+  environment:
+    - NA_PORT=9066
+  restart: always
+  volumes:
+    - /etc/localtime:/etc/localtime
